@@ -1,0 +1,429 @@
+{
+  "crn": "CRN716485",
+  "units": "feet",
+  "scale_source": "wall_thickness_note: modal drawn wall thickness (7.9pt) vs 6\" external wall note",
+  "boundary": [
+    [
+      12.24,
+      14.89
+    ],
+    [
+      12.23,
+      25.72
+    ],
+    [
+      12.31,
+      26.83
+    ],
+    [
+      12.23,
+      29.24
+    ],
+    [
+      12.23,
+      36.28
+    ],
+    [
+      12.31,
+      37.41
+    ],
+    [
+      12.23,
+      39.82
+    ],
+    [
+      12.24,
+      51.83
+    ],
+    [
+      12.72,
+      51.83
+    ],
+    [
+      13.72,
+      51.43
+    ],
+    [
+      14.97,
+      51.07
+    ],
+    [
+      16.26,
+      50.83
+    ],
+    [
+      17.56,
+      50.73
+    ],
+    [
+      19.18,
+      50.8
+    ],
+    [
+      20.27,
+      49.92
+    ],
+    [
+      21.27,
+      49.26
+    ],
+    [
+      22.34,
+      48.71
+    ],
+    [
+      23.45,
+      48.26
+    ],
+    [
+      24.61,
+      47.92
+    ],
+    [
+      25.79,
+      47.69
+    ],
+    [
+      26.98,
+      47.58
+    ],
+    [
+      28.18,
+      47.58
+    ],
+    [
+      30.05,
+      47.73
+    ],
+    [
+      31.25,
+      47.97
+    ],
+    [
+      32.42,
+      48.32
+    ],
+    [
+      33.56,
+      48.79
+    ],
+    [
+      34.64,
+      49.37
+    ],
+    [
+      35.66,
+      50.05
+    ],
+    [
+      36.61,
+      50.83
+    ],
+    [
+      37.59,
+      51.83
+    ],
+    [
+      38.16,
+      51.95
+    ],
+    [
+      38.06,
+      47.49
+    ],
+    [
+      38.08,
+      35.33
+    ],
+    [
+      37.72,
+      32.65
+    ],
+    [
+      37.72,
+      31.42
+    ],
+    [
+      38.08,
+      28.75
+    ],
+    [
+      38.07,
+      25.12
+    ],
+    [
+      37.84,
+      23.97
+    ],
+    [
+      37.72,
+      22.75
+    ],
+    [
+      37.72,
+      21.52
+    ],
+    [
+      38.08,
+      18.84
+    ],
+    [
+      38.07,
+      14.89
+    ],
+    [
+      36.59,
+      14.23
+    ],
+    [
+      36.34,
+      14.22
+    ],
+    [
+      35.22,
+      14.3
+    ],
+    [
+      32.8,
+      14.22
+    ],
+    [
+      24.41,
+      14.22
+    ],
+    [
+      23.23,
+      14.3
+    ],
+    [
+      20.89,
+      14.22
+    ],
+    [
+      13.72,
+      14.28
+    ]
+  ],
+  "boundary_area_sqft": 904.9,
+  "stated_area_sqft": 987.0,
+  "area_match_pct": 91.7,
+  "columns": [
+    {
+      "id": 0,
+      "x": 12.24,
+      "y": 14.89,
+      "source": "boundary corner"
+    },
+    {
+      "id": 1,
+      "x": 12.24,
+      "y": 51.83,
+      "source": "boundary corner"
+    },
+    {
+      "id": 2,
+      "x": 28.18,
+      "y": 47.58,
+      "source": "boundary corner"
+    },
+    {
+      "id": 3,
+      "x": 38.16,
+      "y": 51.95,
+      "source": "boundary corner"
+    },
+    {
+      "id": 4,
+      "x": 38.07,
+      "y": 14.89,
+      "source": "boundary corner"
+    },
+    {
+      "id": 5,
+      "x": 37.5,
+      "y": 47.62,
+      "source": "wall junction"
+    },
+    {
+      "id": 6,
+      "x": 12.81,
+      "y": 47.62,
+      "source": "wall junction"
+    },
+    {
+      "id": 7,
+      "x": 12.81,
+      "y": 34.54,
+      "source": "wall junction"
+    },
+    {
+      "id": 8,
+      "x": 12.73,
+      "y": 29.65,
+      "source": "wall junction"
+    },
+    {
+      "id": 9,
+      "x": 20.35,
+      "y": 34.54,
+      "source": "wall junction"
+    },
+    {
+      "id": 10,
+      "x": 20.37,
+      "y": 29.9,
+      "source": "wall junction"
+    },
+    {
+      "id": 11,
+      "x": 19.7,
+      "y": 50.04,
+      "source": "wall junction"
+    },
+    {
+      "id": 12,
+      "x": 12.24,
+      "y": 27.2,
+      "source": "span fill (>15 ft gap)"
+    },
+    {
+      "id": 13,
+      "x": 12.24,
+      "y": 39.52,
+      "source": "span fill (>15 ft gap)"
+    },
+    {
+      "id": 14,
+      "x": 38.13,
+      "y": 39.6,
+      "source": "span fill (>15 ft gap)"
+    },
+    {
+      "id": 15,
+      "x": 38.1,
+      "y": 27.24,
+      "source": "span fill (>15 ft gap)"
+    },
+    {
+      "id": 16,
+      "x": 25.16,
+      "y": 14.89,
+      "source": "span fill (>15 ft gap)"
+    }
+  ],
+  "beams": [
+    {
+      "id": 0,
+      "from": 0,
+      "to": 12,
+      "length_ft": 12.31
+    },
+    {
+      "id": 1,
+      "from": 12,
+      "to": 8,
+      "length_ft": 2.5
+    },
+    {
+      "id": 2,
+      "from": 8,
+      "to": 7,
+      "length_ft": 4.89
+    },
+    {
+      "id": 3,
+      "from": 7,
+      "to": 13,
+      "length_ft": 5.01
+    },
+    {
+      "id": 4,
+      "from": 13,
+      "to": 6,
+      "length_ft": 8.12
+    },
+    {
+      "id": 5,
+      "from": 6,
+      "to": 1,
+      "length_ft": 4.25
+    },
+    {
+      "id": 6,
+      "from": 1,
+      "to": 11,
+      "length_ft": 7.67
+    },
+    {
+      "id": 7,
+      "from": 11,
+      "to": 2,
+      "length_ft": 8.83
+    },
+    {
+      "id": 8,
+      "from": 2,
+      "to": 3,
+      "length_ft": 10.89
+    },
+    {
+      "id": 9,
+      "from": 3,
+      "to": 5,
+      "length_ft": 4.38
+    },
+    {
+      "id": 10,
+      "from": 5,
+      "to": 14,
+      "length_ft": 8.04
+    },
+    {
+      "id": 11,
+      "from": 14,
+      "to": 15,
+      "length_ft": 12.36
+    },
+    {
+      "id": 12,
+      "from": 15,
+      "to": 4,
+      "length_ft": 12.35
+    },
+    {
+      "id": 13,
+      "from": 4,
+      "to": 16,
+      "length_ft": 12.91
+    },
+    {
+      "id": 14,
+      "from": 16,
+      "to": 0,
+      "length_ft": 12.92
+    },
+    {
+      "id": 15,
+      "from": 10,
+      "to": 9,
+      "length_ft": 4.64
+    },
+    {
+      "id": 16,
+      "from": 8,
+      "to": 10,
+      "length_ft": 7.64
+    }
+  ],
+  "assumptions": [
+    "Boundary = outer face of the exterior walls, taken from filled black wall polygons in the PDF; the dash-dot plot/setback line is a stroked path and is structurally incapable of being picked up (see stage1_boundary.py).",
+    "Door/window openings are bridged with a morphological closing whose radius is derived from this plan's own room sizes and door/window schedule, not a fixed constant (see stage1_boundary.choose_closing_radius_ft).",
+    "A balcony or slab projection is included in the boundary whenever it is enclosed by wall material that survives the closing step; when the sheet states balcony area separately, it is added to the stated built-up area for the area-match check.",
+    "Columns are proposed at every boundary corner, every wall-to-wall junction, and at evenly spaced points wherever a straight run exceeds 15 ft (see stage2_columns.py).",
+    "Interior beams are only proposed where the straight line between two columns is at least 80% covered by wall material -- a beam is never inferred across a span with no wall behind it (see stage3_beams.interior_wall_beams)."
+  ],
+  "known_problems": [
+    "The closing radius that reconnects wall fragments and bridges openings (stage 1) also smooths over real concave notches narrower than the radius -- visible on the drawing as a gentle curve where the source plan actually has a sharp step.",
+    "A beam is only proposed where a wall is drawn between two aligned columns; a span that is genuinely open (e.g. a stair void open to a passage on one side) gets no beam there, which can leave one edge of a slab panel unsupported in the output."
+  ]
+}

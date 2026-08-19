@@ -1,0 +1,227 @@
+{
+  "crn": "CRN642050",
+  "units": "feet",
+  "scale_source": "wall_thickness_note: modal drawn wall thickness (5.3pt) vs 6\" external wall note",
+  "boundary": [
+    [
+      15.18,
+      33.88
+    ],
+    [
+      15.18,
+      58.51
+    ],
+    [
+      27.98,
+      58.51
+    ],
+    [
+      29.71,
+      57.88
+    ],
+    [
+      31.45,
+      57.62
+    ],
+    [
+      33.21,
+      57.71
+    ],
+    [
+      34.07,
+      57.88
+    ],
+    [
+      35.8,
+      58.51
+    ],
+    [
+      48.47,
+      58.51
+    ],
+    [
+      48.47,
+      33.88
+    ]
+  ],
+  "boundary_area_sqft": 815.1,
+  "stated_area_sqft": 744.0,
+  "area_match_pct": 109.6,
+  "columns": [
+    {
+      "id": 0,
+      "x": 15.43,
+      "y": 34.0,
+      "source": "boundary corner"
+    },
+    {
+      "id": 1,
+      "x": 15.43,
+      "y": 58.39,
+      "source": "boundary corner"
+    },
+    {
+      "id": 2,
+      "x": 48.22,
+      "y": 58.39,
+      "source": "boundary corner"
+    },
+    {
+      "id": 3,
+      "x": 48.34,
+      "y": 34.13,
+      "source": "boundary corner"
+    },
+    {
+      "id": 4,
+      "x": 36.71,
+      "y": 34.13,
+      "source": "wall junction"
+    },
+    {
+      "id": 5,
+      "x": 28.53,
+      "y": 34.37,
+      "source": "wall junction"
+    },
+    {
+      "id": 6,
+      "x": 36.71,
+      "y": 58.26,
+      "source": "wall junction"
+    },
+    {
+      "id": 7,
+      "x": 27.0,
+      "y": 58.26,
+      "source": "wall junction"
+    },
+    {
+      "id": 8,
+      "x": 28.05,
+      "y": 43.92,
+      "source": "wall junction"
+    },
+    {
+      "id": 9,
+      "x": 36.05,
+      "y": 42.22,
+      "source": "wall junction"
+    },
+    {
+      "id": 10,
+      "x": 15.18,
+      "y": 46.2,
+      "source": "span fill (>15 ft gap)"
+    },
+    {
+      "id": 11,
+      "x": 48.47,
+      "y": 46.2,
+      "source": "span fill (>15 ft gap)"
+    },
+    {
+      "id": 12,
+      "x": 26.28,
+      "y": 33.88,
+      "source": "span fill (>15 ft gap)"
+    }
+  ],
+  "beams": [
+    {
+      "id": 0,
+      "from": 10,
+      "to": 1,
+      "length_ft": 12.19
+    },
+    {
+      "id": 1,
+      "from": 1,
+      "to": 7,
+      "length_ft": 11.57
+    },
+    {
+      "id": 2,
+      "from": 7,
+      "to": 6,
+      "length_ft": 9.71
+    },
+    {
+      "id": 3,
+      "from": 6,
+      "to": 2,
+      "length_ft": 11.51
+    },
+    {
+      "id": 4,
+      "from": 2,
+      "to": 11,
+      "length_ft": 12.19
+    },
+    {
+      "id": 5,
+      "from": 11,
+      "to": 3,
+      "length_ft": 12.07
+    },
+    {
+      "id": 6,
+      "from": 3,
+      "to": 4,
+      "length_ft": 11.63
+    },
+    {
+      "id": 7,
+      "from": 4,
+      "to": 5,
+      "length_ft": 8.18
+    },
+    {
+      "id": 8,
+      "from": 5,
+      "to": 12,
+      "length_ft": 2.3
+    },
+    {
+      "id": 9,
+      "from": 12,
+      "to": 0,
+      "length_ft": 10.85
+    },
+    {
+      "id": 10,
+      "from": 0,
+      "to": 10,
+      "length_ft": 12.2
+    },
+    {
+      "id": 11,
+      "from": 4,
+      "to": 9,
+      "length_ft": 8.12
+    },
+    {
+      "id": 12,
+      "from": 9,
+      "to": 6,
+      "length_ft": 16.05
+    },
+    {
+      "id": 13,
+      "from": 5,
+      "to": 8,
+      "length_ft": 9.56
+    }
+  ],
+  "assumptions": [
+    "Boundary = outer face of the exterior walls, taken from filled black wall polygons in the PDF; the dash-dot plot/setback line is a stroked path and is structurally incapable of being picked up (see stage1_boundary.py).",
+    "Door/window openings are bridged with a morphological closing whose radius is derived from this plan's own room sizes and door/window schedule, not a fixed constant (see stage1_boundary.choose_closing_radius_ft).",
+    "A balcony or slab projection is included in the boundary whenever it is enclosed by wall material that survives the closing step; when the sheet states balcony area separately, it is added to the stated built-up area for the area-match check.",
+    "Columns are proposed at every boundary corner, every wall-to-wall junction, and at evenly spaced points wherever a straight run exceeds 15 ft (see stage2_columns.py).",
+    "Interior beams are only proposed where the straight line between two columns is at least 80% covered by wall material -- a beam is never inferred across a span with no wall behind it (see stage3_beams.interior_wall_beams)."
+  ],
+  "known_problems": [
+    "The closing radius that reconnects wall fragments and bridges openings (stage 1) also smooths over real concave notches narrower than the radius -- visible on the drawing as a gentle curve where the source plan actually has a sharp step.",
+    "A beam is only proposed where a wall is drawn between two aligned columns; a span that is genuinely open (e.g. a stair void open to a passage on one side) gets no beam there, which can leave one edge of a slab panel unsupported in the output."
+  ]
+}
